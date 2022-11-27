@@ -29,8 +29,8 @@ $ yarn run start
 ### Primeira fase do projeto
 
 - [x] Criar component Botão
-- [ ] Criar component Input
-- [ ] Estilização básica página inicial
+- [x] Criar component Input
+- [x] Estilização básica página inicial
 - [ ] Criar estilização Input
 - [ ] Criar estilização Botão
 - [ ] Dividir layout em linha e coluna
