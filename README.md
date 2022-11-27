@@ -28,7 +28,7 @@ $ yarn run start
 
 ### Primeira fase do projeto
 
-- [ ] Criar component Botão
+- [x] Criar component Botão
 - [ ] Criar component Input
 - [ ] Estilização básica página inicial
 - [ ] Criar estilização Input
