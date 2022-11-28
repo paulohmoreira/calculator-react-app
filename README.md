@@ -46,7 +46,7 @@ $ yarn run start
 - [ ] Adicionar operações matemáticas
  - [x] Função somar (apenas um número)
  - [x] Adicionar funcionalidade ao botão "="
- - [ ] Função subtrair
+ - [x] Função subtrair (apenas um número)
  - [ ] Função multiplicar
  - [ ] Função dividir
 
