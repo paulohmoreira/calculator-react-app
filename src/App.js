@@ -14,6 +14,11 @@ const App = () => {
     setCurrentNumber(prev => `${number}${prev === "0" ? "" : prev}`)
   }
 
+  // Limpar input
+  const handleOnClear = () => {
+    setCurrentNumber("0")
+  }
+
   return (
     <Container>
       <Content>
@@ -21,7 +26,7 @@ const App = () => {
         <Row>
           <Button label="X" />
           <Button label="/" />
-          <Button label="C" />
+          <Button label="C" onClick={handleOnClear} />
           <Button label="<-" />
         </Row>
         <Row>

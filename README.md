@@ -36,12 +36,12 @@ $ yarn run start
 - [x] Dividir layout em linha e coluna
 - [x] Desativar input
 
-- [ ] Adicionar números digitados no input
+- [x] Adicionar números digitados no input
   - [x] Criar função que vai enviar o value do botão para o input
   - [x] Setar função em todos os botões
   - [x] Validação para não ficar com o '0' sempre visível
 
-- [ ] Função limpar tela
+- [x] Função limpar tela
 
 - [ ] Adicionar operações matemáticas
  - [ ] Função somar
