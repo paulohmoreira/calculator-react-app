@@ -31,8 +31,8 @@ $ yarn run start
 - [x] Criar component Botão
 - [x] Criar component Input
 - [x] Estilização básica página inicial
-- [ ] Criar estilização Input
-- [ ] Criar estilização Botão
+- [x] Criar estilização inicial Input
+- [ ] Criar estilização inicial Botão
 - [ ] Dividir layout em linha e coluna
 
 - [ ] Adicionar números digitados no input
