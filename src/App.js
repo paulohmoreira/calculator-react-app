@@ -73,6 +73,21 @@ const App = () => {
     }
   }
 
+  // Função de dividir
+  const handleDivideNumbers = () => {
+    if(firstNumber === "0") {
+      setFirstNumber(String(currentNumber));
+      setCurrentNumber("0");
+      setOperation("/");
+      console.log(firstNumber, currentNumber, operation);
+    } else {
+      console.log(firstNumber, currentNumber, operation);
+      const sum = Number(firstNumber) / Number(currentNumber);
+      setCurrentNumber(String(sum));
+      setOperation("");
+    }
+  }
+
   const handleEquals = () => {
     if (firstNumber !== "0" && operation !== "" && currentNumber !== "0") {
       switch (operation) {
@@ -88,6 +103,10 @@ const App = () => {
           console.log(firstNumber, currentNumber, operation);
           handleMultiplyNumbers();
           break;
+        case "/":
+          console.log(firstNumber, currentNumber, operation);
+          handleDivideNumbers();
+          break;
 
         default:
           break;
@@ -101,7 +120,7 @@ const App = () => {
         <Input value={currentNumber}/>
         <Row>
           <Button label="X" onClick={handleMultiplyNumbers}/>
-          <Button label="/" />
+          <Button label="/" onClick={handleDivideNumbers} />
           <Button label="C" onClick={handleOnClear} />
           <Button label="<-" />
         </Row>
