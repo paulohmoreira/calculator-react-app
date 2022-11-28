@@ -37,7 +37,7 @@ $ yarn run start
 - [x] Desativar input
 
 - [ ] Adicionar números digitados no input
-  - [ ] Criar função que vai enviar o value do botão para o input
+  - [x] Criar função que vai enviar o value do botão para o input
   - [ ] Setar função em todos os botões
   - [ ] Validação para não ficar com o '0' sempre visível
 

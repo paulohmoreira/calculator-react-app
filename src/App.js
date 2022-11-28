@@ -1,12 +1,23 @@
+import { useState } from "react";
+
 import { Container, Content, Row } from "./styles";
+
 import Input from "./components/Input"
 import Button from "./components/Button"
 
 const App = () => {
+  // Retorna um valor e uma função para atualizar o valor
+  const [currentNumber, setCurrentNumber] = useState(0);
+
+  // Adiciona os dígitos no input
+  const handleAddNumber = (number) => {
+    setCurrentNumber(prev => `${number}${prev}`)
+  }
+
   return (
     <Container>
       <Content>
-        <Input />
+        <Input value={currentNumber}/>
         <Row>
           <Button label="X" />
           <Button label="/" />
