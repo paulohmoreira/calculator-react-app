@@ -34,7 +34,7 @@ $ yarn run start
 - [x] Criar estilização inicial Input
 - [x] Criar estilização inicial Botão
 - [x] Dividir layout em linha e coluna
-- [ ] Desativar input
+- [x] Desativar input
 
 - [ ] Adicionar números digitados no input
   - [ ] Criar função que vai enviar o value do botão para o input
