@@ -11,7 +11,13 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   background-color: #fff;
-  width: 80%;
+  width: 60%;
   max-width: 560px;
-  min-height: 350px;
+`
+
+export const Row = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 `
