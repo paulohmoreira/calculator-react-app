@@ -6,11 +6,14 @@ import Input from "./components/Input"
 import Button from "./components/Button"
 
 const App = () => {
-  // Retorna um valor e uma função para atualizar o valor do Input
+  // Retorna um valor e uma função para manipular o valor mostrado no Input
   const [currentNumber, setCurrentNumber] = useState("0");
   
-  // Retorna um valor e uma função para atualizar o valor das operações
+  // ... manipular o primeiro valor das operações
   const [firstNumber, setFirstNumber] = useState("0");
+
+  //... manipular o operador das operações
+  const [operation, setOperation] = useState("");
 
   // Adiciona os dígitos no input
   const handleAddNumber = (number) => {
@@ -21,7 +24,8 @@ const App = () => {
   const handleOnClear = () => {
     setCurrentNumber("0");
     setFirstNumber("0");
-    console.log(firstNumber, currentNumber)
+    setOperation("");
+    console.log(firstNumber, currentNumber, operation)
   }
 
   // Função de soma
@@ -29,11 +33,28 @@ const App = () => {
     if(firstNumber === "0") {
       setFirstNumber(String(currentNumber));
       setCurrentNumber("0");
-      console.log(firstNumber, currentNumber)
+      setOperation("+");
+      console.log(firstNumber, currentNumber, operation);
     } else {
-      console.log(firstNumber, currentNumber)
+      console.log(firstNumber, currentNumber, operation);
       const sum = Number(firstNumber) + Number(currentNumber);
       setCurrentNumber(String(sum));
+      setOperation("");
+    }
+  }
+
+  const handleEquals = () => {
+    if (firstNumber !== "0" && operation !== "" && currentNumber !== "0") {
+      switch (operation) {
+        case "+":
+          console.log("oi")
+          console.log(firstNumber, currentNumber, operation);
+          handleSumNumbers();
+          break;
+      
+        default:
+          break;
+      }
     }
   }
 
@@ -63,7 +84,7 @@ const App = () => {
           <Button label="1" onClick={() => handleAddNumber("1")} />
           <Button label="2" onClick={() => handleAddNumber("2")} />
           <Button label="3" onClick={() => handleAddNumber("3")} />
-          <Button label="=" />
+          <Button label="=" onClick={handleEquals} />
         </Row>
       </Content>
     </Container>
