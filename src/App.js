@@ -7,11 +7,11 @@ import Button from "./components/Button"
 
 const App = () => {
   // Retorna um valor e uma função para atualizar o valor
-  const [currentNumber, setCurrentNumber] = useState(0);
+  const [currentNumber, setCurrentNumber] = useState("0");
 
   // Adiciona os dígitos no input
   const handleAddNumber = (number) => {
-    setCurrentNumber(prev => `${number}${prev}`)
+    setCurrentNumber(prev => `${number}${prev === "0" ? "" : prev}`)
   }
 
   return (

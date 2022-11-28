@@ -39,7 +39,7 @@ $ yarn run start
 - [ ] Adicionar números digitados no input
   - [x] Criar função que vai enviar o value do botão para o input
   - [x] Setar função em todos os botões
-  - [ ] Validação para não ficar com o '0' sempre visível
+  - [x] Validação para não ficar com o '0' sempre visível
 
 - [ ] Função limpar tela
 
