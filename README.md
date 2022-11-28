@@ -44,7 +44,7 @@ $ yarn run start
 - [x] Função limpar tela
 
 - [ ] Adicionar operações matemáticas
- - [ ] Função somar
+ - [x] Função somar (apenas um número)
  - [ ] Função subtrair
  - [ ] Função multiplicar
  - [ ] Função dividir

@@ -6,17 +6,35 @@ import Input from "./components/Input"
 import Button from "./components/Button"
 
 const App = () => {
-  // Retorna um valor e uma função para atualizar o valor
+  // Retorna um valor e uma função para atualizar o valor do Input
   const [currentNumber, setCurrentNumber] = useState("0");
+  
+  // Retorna um valor e uma função para atualizar o valor das operações
+  const [firstNumber, setFirstNumber] = useState("0");
 
   // Adiciona os dígitos no input
   const handleAddNumber = (number) => {
-    setCurrentNumber(prev => `${number}${prev === "0" ? "" : prev}`)
+    setCurrentNumber(prev => `${prev === "0" ? "" : prev}${number}`)
   }
 
   // Limpar input
   const handleOnClear = () => {
-    setCurrentNumber("0")
+    setCurrentNumber("0");
+    setFirstNumber("0");
+    console.log(firstNumber, currentNumber)
+  }
+
+  // Função de soma
+  const handleSumNumbers = () => {
+    if(firstNumber === "0") {
+      setFirstNumber(String(currentNumber));
+      setCurrentNumber("0");
+      console.log(firstNumber, currentNumber)
+    } else {
+      console.log(firstNumber, currentNumber)
+      const sum = Number(firstNumber) + Number(currentNumber);
+      setCurrentNumber(String(sum));
+    }
   }
 
   return (
@@ -39,7 +57,7 @@ const App = () => {
           <Button label="4" onClick={() => handleAddNumber("4")} />
           <Button label="5" onClick={() => handleAddNumber("5")} />
           <Button label="6" onClick={() => handleAddNumber("6")} />
-          <Button label="+" />
+          <Button label="+" onClick={handleSumNumbers} />
         </Row>
         <Row>
           <Button label="1" onClick={() => handleAddNumber("1")} />
