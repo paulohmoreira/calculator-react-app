@@ -58,6 +58,21 @@ const App = () => {
     }
   }
 
+  // Função de multiplicar
+  const handleMultiplyNumbers = () => {
+    if(firstNumber === "0") {
+      setFirstNumber(String(currentNumber));
+      setCurrentNumber("0");
+      setOperation("*");
+      console.log(firstNumber, currentNumber, operation);
+    } else {
+      console.log(firstNumber, currentNumber, operation);
+      const sum = Number(firstNumber) * Number(currentNumber);
+      setCurrentNumber(String(sum));
+      setOperation("");
+    }
+  }
+
   const handleEquals = () => {
     if (firstNumber !== "0" && operation !== "" && currentNumber !== "0") {
       switch (operation) {
@@ -68,6 +83,10 @@ const App = () => {
         case "-":
           console.log(firstNumber, currentNumber, operation);
           handleMinusNumbers();
+          break;
+        case "*":
+          console.log(firstNumber, currentNumber, operation);
+          handleMultiplyNumbers();
           break;
 
         default:
@@ -81,7 +100,7 @@ const App = () => {
       <Content>
         <Input value={currentNumber}/>
         <Row>
-          <Button label="X" />
+          <Button label="X" onClick={handleMultiplyNumbers}/>
           <Button label="/" />
           <Button label="C" onClick={handleOnClear} />
           <Button label="<-" />

@@ -47,7 +47,7 @@ $ yarn run start
  - [x] Função somar (apenas um número)
  - [x] Adicionar funcionalidade ao botão "="
  - [x] Função subtrair (apenas um número)
- - [ ] Função multiplicar
+ - [x] Função multiplicar
  - [ ] Função dividir
 
 ### Segunda fase do projeto
