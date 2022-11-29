@@ -137,7 +137,7 @@ const App = () => {
           <Button label="." onClick={() => handleAddNumber(".")} />
           <Button label="0" onClick={() => handleAddNumber("0")} />
           <Button label="/" onClick={handleDivideNumbers} />
-          <Button label="X" onClick={handleMultiplyNumbers}/>
+          <Button label="x" onClick={handleMultiplyNumbers}/>
         </Row>
         <Row>
           <Button label="RESET" onClick={handleOnClear} />

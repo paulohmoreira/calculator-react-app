@@ -6,6 +6,7 @@ export const ButtonContainer = styled.button`
   background-color: #00aaf0;
   color: #fff;
   font-size: 1.5rem;
+  font-family: 'League Spartan', sans-serif;
   font-weight: 700;
   flex: 1;
   cursor: pointer;

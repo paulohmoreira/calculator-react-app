@@ -9,7 +9,6 @@ export const InputContainer = styled.div`
   align-items: center;
   justify-content: flex-end;
   font-size: 1.5rem;
-  font-family: Roboto, sans-serif;
 
   input {
     width: 100%;
@@ -17,9 +16,9 @@ export const InputContainer = styled.div`
     background-color: #aaff;
     color: #fff;
     border: 0;
-    font-size: 1.5rem;
-    font-family: Roboto, sans-serif;
+    font-size: 2rem;
     padding: .625rem;
     text-align: right;
+    font-family: 'League Spartan', sans-serif;
   }
 `

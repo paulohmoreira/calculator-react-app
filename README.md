@@ -57,6 +57,7 @@ $ yarn run start
 
 - [ ] Layout
   - [x] Alterações nos botões
+  - [x] Alteração na fonte
   - [ ] Alterações no layout para ficar mais próximo do design proposto
 
 - [ ] Funcionalidades extras
