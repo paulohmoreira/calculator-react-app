@@ -106,6 +106,10 @@ const App = () => {
     }
   }
 
+  const deleteValue = () => {
+    setCurrentNumber(currentNumber.substring(0, currentNumber.length -1))
+  }
+
   return (
     <Container>
       <Content>
@@ -114,7 +118,8 @@ const App = () => {
           <Button label="X" onClick={handleMultiplyNumbers}/>
           <Button label="/" onClick={handleDivideNumbers} />
           <Button label="C" onClick={handleOnClear} />
-          <Button label="<-" />
+          <Button label="DEL" 
+          onClick={() => currentNumber.length === 1 && currentNumber === "0" ? "" : deleteValue()} />
         </Row>
         <Row>
           <Button label="7" onClick={() => handleAddNumber("7")} />

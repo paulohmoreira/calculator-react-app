@@ -51,7 +51,7 @@ $ yarn run start
  - [x] Função dividir (apenas um número)
  - [x] Fazer operações em sequência
  
- - [ ] Função deletar último dígito
+ - [x] Função deletar último dígito
 
 ### Segunda fase do projeto
 
