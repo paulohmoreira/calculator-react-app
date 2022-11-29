@@ -56,6 +56,7 @@ $ yarn run start
 ### Segunda fase do projeto
 
 - [ ] Layout
+  - [x] Alterações nos botões
   - [ ] Alterações no layout para ficar mais próximo do design proposto
 
 - [ ] Funcionalidades extras

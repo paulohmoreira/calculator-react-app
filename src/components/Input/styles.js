@@ -20,5 +20,6 @@ export const InputContainer = styled.div`
     font-size: 1.5rem;
     font-family: Roboto, sans-serif;
     padding: .625rem;
+    text-align: right;
   }
 `
