@@ -34,12 +34,11 @@ const App = () => {
       setFirstNumber(String(currentNumber));
       setCurrentNumber("0");
       setOperation("+");
-      console.log(firstNumber, currentNumber, operation);
     } else {
-      console.log(firstNumber, currentNumber, operation);
       const sum = Number(firstNumber) + Number(currentNumber);
       setCurrentNumber(String(sum));
       setOperation("");
+      setFirstNumber("0");
     }
   }
 
@@ -49,12 +48,11 @@ const App = () => {
       setFirstNumber(String(currentNumber));
       setCurrentNumber("0");
       setOperation("-");
-      console.log(firstNumber, currentNumber, operation);
     } else {
-      console.log(firstNumber, currentNumber, operation);
       const sum = Number(firstNumber) - Number(currentNumber);
       setCurrentNumber(String(sum));
       setOperation("");
+      setFirstNumber("0");
     }
   }
 
@@ -64,12 +62,11 @@ const App = () => {
       setFirstNumber(String(currentNumber));
       setCurrentNumber("0");
       setOperation("*");
-      console.log(firstNumber, currentNumber, operation);
     } else {
-      console.log(firstNumber, currentNumber, operation);
       const sum = Number(firstNumber) * Number(currentNumber);
       setCurrentNumber(String(sum));
       setOperation("");
+      setFirstNumber("0");
     }
   }
 
@@ -79,12 +76,11 @@ const App = () => {
       setFirstNumber(String(currentNumber));
       setCurrentNumber("0");
       setOperation("/");
-      console.log(firstNumber, currentNumber, operation);
     } else {
-      console.log(firstNumber, currentNumber, operation);
       const sum = Number(firstNumber) / Number(currentNumber);
       setCurrentNumber(String(sum));
       setOperation("");
+      setFirstNumber("0");
     }
   }
 
@@ -92,19 +88,15 @@ const App = () => {
     if (firstNumber !== "0" && operation !== "" && currentNumber !== "0") {
       switch (operation) {
         case "+":
-          console.log(firstNumber, currentNumber, operation);
           handleSumNumbers();
           break;
         case "-":
-          console.log(firstNumber, currentNumber, operation);
           handleMinusNumbers();
           break;
         case "*":
-          console.log(firstNumber, currentNumber, operation);
           handleMultiplyNumbers();
           break;
         case "/":
-          console.log(firstNumber, currentNumber, operation);
           handleDivideNumbers();
           break;
 

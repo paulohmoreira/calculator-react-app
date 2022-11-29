@@ -43,13 +43,13 @@ $ yarn run start
 
 - [x] Função limpar tela
 
-- [ ] Adicionar operações matemáticas
+- [x] Adicionar operações matemáticas
  - [x] Função somar (apenas um número)
  - [x] Adicionar funcionalidade ao botão "="
  - [x] Função subtrair (apenas um número)
  - [x] Função multiplicar (apenas um número)
  - [x] Função dividir (apenas um número)
- - [ ] Fazer operações em sequência
+ - [x] Fazer operações em sequência
  
  - [ ] Função deletar último dígito
 
