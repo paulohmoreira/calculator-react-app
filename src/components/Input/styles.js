@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const InputContainer = styled.div`
   width: 100%;
   height: 75px;
-  background-color: #aaffaa;
 
   display: flex;
   align-items: center;
@@ -12,12 +11,13 @@ export const InputContainer = styled.div`
 
   input {
     width: 100%;
-    height: 75px;
-    background-color: #aaff;
-    color: #fff;
+    height: 80px;
+    background-color: hsl(224, 36%, 15%);
+    color: hsl(0, 0%, 100%);
     border: 0;
+    border-radius: .5rem;
     font-size: 2rem;
-    padding: .625rem;
+    padding: 1rem;
     text-align: right;
     font-family: 'League Spartan', sans-serif;
   }

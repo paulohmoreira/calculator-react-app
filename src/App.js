@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Container, Content, Row } from "./styles";
+import { Container, Content, Display, KeyPad, Row } from "./styles";
 
 import Input from "./components/Input"
 import Button from "./components/Button"
@@ -113,36 +113,42 @@ const App = () => {
   return (
     <Container>
       <Content>
-        <Input value={currentNumber}/>
-        <Row>
-          <Button label="7" onClick={() => handleAddNumber("7")} />
-          <Button label="8" onClick={() => handleAddNumber("8")} />
-          <Button label="9" onClick={() => handleAddNumber("9")} />
-          <Button label="DEL" 
-          onClick={() => currentNumber.length === 1 && currentNumber === "0" ? "" : deleteValue()} />
-        </Row>
-        <Row>
-          <Button label="4" onClick={() => handleAddNumber("4")} />
-          <Button label="5" onClick={() => handleAddNumber("5")} />
-          <Button label="6" onClick={() => handleAddNumber("6")} />
-          <Button label="+" onClick={handleSumNumbers} />
-        </Row>
-        <Row>
-          <Button label="1" onClick={() => handleAddNumber("1")} />
-          <Button label="2" onClick={() => handleAddNumber("2")} />
-          <Button label="3" onClick={() => handleAddNumber("3")} />
-          <Button label="-" onClick={handleMinusNumbers} />
-        </Row>
-        <Row>
-          <Button label="." onClick={() => handleAddNumber(".")} />
-          <Button label="0" onClick={() => handleAddNumber("0")} />
-          <Button label="/" onClick={handleDivideNumbers} />
-          <Button label="x" onClick={handleMultiplyNumbers}/>
-        </Row>
-        <Row>
-          <Button label="RESET" onClick={handleOnClear} />
-          <Button label="=" onClick={handleEquals} />
-        </Row>
+        <Display>
+          <Input value={currentNumber}/>
+        </Display>
+        <KeyPad>
+          <Row>
+            <Button label="7" onClick={() => handleAddNumber("7")} />
+            <Button label="8" onClick={() => handleAddNumber("8")} />
+            <Button label="9" onClick={() => handleAddNumber("9")} />
+            <Button fontSize={1.5} label="DEL" 
+            onClick={() => currentNumber.length === 1 && currentNumber === "0" ? "" : deleteValue()} />
+          </Row>
+          <Row>
+            <Button label="4" onClick={() => handleAddNumber("4")} />
+            <Button label="5" onClick={() => handleAddNumber("5")} />
+            <Button label="6" onClick={() => handleAddNumber("6")} />
+            <Button label="+" onClick={handleSumNumbers} />
+          </Row>
+
+          <Row>
+            <Button label="1" onClick={() => handleAddNumber("1")} />
+            <Button label="2" onClick={() => handleAddNumber("2")} />
+            <Button label="3" onClick={() => handleAddNumber("3")} />
+            <Button label="-" onClick={handleMinusNumbers} />
+          </Row>
+          
+          <Row>
+            <Button label="." onClick={() => handleAddNumber(".")} />
+            <Button label="0" onClick={() => handleAddNumber("0")} />
+            <Button label="/" onClick={handleDivideNumbers} />
+            <Button label="x" onClick={handleMultiplyNumbers}/>
+          </Row>
+          <Row>
+            <Button fontSize={1.5} label="RESET" onClick={handleOnClear} />
+            <Button fontSize={1.5} label="=" onClick={handleEquals} />
+          </Row>
+        </KeyPad>
       </Content>
     </Container>
   );

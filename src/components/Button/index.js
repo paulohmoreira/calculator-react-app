@@ -1,8 +1,8 @@
 import { ButtonContainer } from "./styles";
 
-const Button = ({label, onClick}) => {
+const Button = ({fontSize, label, onClick}) => {
   return (
-    <ButtonContainer onClick={onClick}>
+    <ButtonContainer fontSize={fontSize} onClick={onClick}>
      {label}
     </ButtonContainer>
   );
