@@ -63,6 +63,7 @@ $ yarn run start
   - [ ] Alterações no layout para ficar mais próximo do design proposto
 
 - [ ] Funcionalidades extras
+  - [x] Adicionar header
   - [ ] Adicionar temas
   - [ ] Salvar escolha do tema no localstorage
   - [ ] Carregar tema escolhido ao inicar a aplicação

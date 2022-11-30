@@ -19,4 +19,4 @@ export const ButtonContainer = styled.button`
   &:hover {
     opacity: .6;
   }
-`;
+`

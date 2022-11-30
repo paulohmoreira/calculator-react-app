@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Container, Content, Display, KeyPad, Row } from "./styles";
+import { Container, Content, Display, KeyPad, Row, Header, WrapperSwitch, Switch, SwitcherContainer, Switcher } from "./styles";
 
 import Input from "./components/Input"
 import Button from "./components/Button"
@@ -14,6 +14,12 @@ const App = () => {
 
   //... manipular o operador das operações
   const [operation, setOperation] = useState("");
+
+  //... manipular o tema atual
+  const [theme, setTheme] = useState(1);
+
+  //... manipular o switcher de tema
+  const [switcher, setSwitcher] = useState("8%");
 
   // Adiciona os dígitos no input
   const handleAddNumber = (number) => {
@@ -110,9 +116,40 @@ const App = () => {
     setCurrentNumber(currentNumber.substring(0, currentNumber.length -1))
   }
 
+  const handleTheme = () => {
+    if (theme === 1){
+      setTheme(2);
+      setSwitcher("38%");
+    } else if (theme === 2){
+      setTheme(3);
+      setSwitcher("70%");
+    } else {
+      setTheme(1);
+      setSwitcher("8%");
+    }
+  }
+
   return (
     <Container>
       <Content>
+        <Row>
+        <Header>
+          <h1>calc</h1>
+          <WrapperSwitch>
+            THEME
+            <Switch>
+              <div>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+              </div>
+              <SwitcherContainer onClick={handleTheme}>
+                <Switcher theme={switcher} />
+              </SwitcherContainer>
+            </Switch>
+          </WrapperSwitch>
+        </Header>
+        </Row>
         <Display>
           <Input value={currentNumber}/>
         </Display>

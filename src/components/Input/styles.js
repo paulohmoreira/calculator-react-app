@@ -8,6 +8,7 @@ export const InputContainer = styled.div`
   align-items: center;
   justify-content: flex-end;
   font-size: 1.5rem;
+  margin-top: 2rem;
 
   input {
     width: 100%;
@@ -16,9 +17,10 @@ export const InputContainer = styled.div`
     color: hsl(0, 0%, 100%);
     border: 0;
     border-radius: .5rem;
-    font-size: 2rem;
+    font-size: 2.125rem;
     padding: 1rem;
     text-align: right;
     font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
   }
 `
