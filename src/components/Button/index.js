@@ -1,8 +1,8 @@
 import { ButtonContainer } from "./styles";
 
-const Button = ({fontSize, label, onClick}) => {
+const Button = ({bgColor, boxShadow, color, fontSize, label, onClick}) => {
   return (
-    <ButtonContainer fontSize={fontSize} onClick={onClick}>
+    <ButtonContainer bgColor={bgColor} boxShadow={boxShadow} color={color} fontSize={fontSize} onClick={onClick}>
      {label}
     </ButtonContainer>
   );

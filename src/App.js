@@ -121,7 +121,7 @@ const App = () => {
             <Button label="7" onClick={() => handleAddNumber("7")} />
             <Button label="8" onClick={() => handleAddNumber("8")} />
             <Button label="9" onClick={() => handleAddNumber("9")} />
-            <Button fontSize={1.5} label="DEL" 
+            <Button bgColor={"hsl(225, 21%, 49%)"} boxShadow={"hsl(224, 28%, 35%)"} color={"#FFF"} fontSize={1.25} label="DEL" 
             onClick={() => currentNumber.length === 1 && currentNumber === "0" ? "" : deleteValue()} />
           </Row>
           <Row>
@@ -145,8 +145,8 @@ const App = () => {
             <Button label="x" onClick={handleMultiplyNumbers}/>
           </Row>
           <Row>
-            <Button fontSize={1.5} label="RESET" onClick={handleOnClear} />
-            <Button fontSize={1.5} label="=" onClick={handleEquals} />
+            <Button bgColor={"hsl(225, 21%, 49%)"} boxShadow={"hsl(224, 28%, 35%)"} color={"#FFF"} fontSize={1.25} label="RESET" onClick={handleOnClear} />
+            <Button bgColor={"hsl(6, 63%, 50%)"} boxShadow={"hsl(6, 70%, 34%)"} color={"#FFF"} fontSize={1.25} label="=" onClick={handleEquals} />
           </Row>
         </KeyPad>
       </Content>
