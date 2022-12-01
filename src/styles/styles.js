@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
-  background-color: hsl(222, 26%, 31%);
+  background-color: var(--main-background);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +19,7 @@ export const Display = styled.div`
 
 export const KeyPad = styled.div`
   padding: 1.5rem;
-  background-color: hsl(223, 31%, 20%);
+  background-color: var(--keypad-background);
   border-radius: .5rem;
 `
 
@@ -36,7 +36,7 @@ export const Header = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #fff;
+  color: var(--text-input);
   font-size: 1.125rem;
   font-family: 'League Spartan', sans-serif;
 `
@@ -66,7 +66,7 @@ export const Switch = styled.div`
 `
 
 export const SwitcherContainer = styled.div`
-    background-color: hsl(223, 31%, 20%);
+    background-color: var(--toggle-background);
     width: 100%;
     min-height: 22px;
     border-radius: 2rem;
@@ -79,7 +79,7 @@ export const Switcher = styled.div`
     width: 13px;
     height: 13px;
     min-height: 13px;
-    background-color: hsl(6, 63%, 50%);
+    background-color: var(--toggle);
     border-radius: 50%;
     position: absolute;
     left: ${(props) => props.theme};

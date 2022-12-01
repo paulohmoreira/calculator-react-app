@@ -70,7 +70,7 @@ $ yarn run start
 - [ ] Funcionalidades extras
   - [x] Adicionar header
   - [x] Separar cores dos temas
-  - [ ] Adicionar temas
+  - [x] Adicionar temas
   - [ ] Salvar escolha do tema no localstorage
   - [ ] Carregar tema escolhido ao inicar a aplicação
 

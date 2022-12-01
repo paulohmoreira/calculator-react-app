@@ -13,8 +13,8 @@ export const InputContainer = styled.div`
   input {
     width: 100%;
     height: 80px;
-    background-color: hsl(224, 36%, 15%);
-    color: hsl(0, 0%, 100%);
+    background-color: var(--screen-background);
+    color: var(--text-input);
     border: 0;
     border-radius: .5rem;
     font-size: 2.125rem;

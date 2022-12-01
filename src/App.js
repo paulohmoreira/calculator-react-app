@@ -11,7 +11,10 @@ import {
   Switch, 
   SwitcherContainer, 
   Switcher 
-} from "./styles";
+} from "./styles/styles";
+import Theme1 from "./styles/theme1";
+import Theme2 from "./styles/theme2";
+import Theme3 from "./styles/theme3";
 
 import Input from "./components/Input"
 import Button from "./components/Button"
@@ -142,6 +145,9 @@ const App = () => {
 
   return (
     <Container>
+      { theme === 1 && <Theme1 /> }
+      { theme === 2 && <Theme2 /> }
+      { theme === 3 && <Theme3 /> }
       <Content>
         <Row>
         <Header>
@@ -169,7 +175,12 @@ const App = () => {
             <Button label="7" onClick={() => handleAddNumber("7")} />
             <Button label="8" onClick={() => handleAddNumber("8")} />
             <Button label="9" onClick={() => handleAddNumber("9")} />
-            <Button bgColor={"hsl(225, 21%, 49%)"} boxShadow={"hsl(224, 28%, 35%)"} color={"#FFF"} fontSize={1.25} label="DEL" 
+            <Button 
+            bgColor={"var(--key--del-reset-background)"} 
+            boxShadow={"var(--key-del-reset-shadow)"} 
+            color={"var(--text-key-del-reset)"} 
+            fontSize={1.25} 
+            label="DEL" 
             onClick={() => currentNumber.length === 1 && currentNumber === "0" ? "" : deleteValue()} />
           </Row>
           <Row>
@@ -193,8 +204,20 @@ const App = () => {
             <Button label="x" onClick={handleMultiplyNumbers}/>
           </Row>
           <Row>
-            <Button bgColor={"hsl(225, 21%, 49%)"} boxShadow={"hsl(224, 28%, 35%)"} color={"#FFF"} fontSize={1.25} label="RESET" onClick={handleOnClear} />
-            <Button bgColor={"hsl(6, 63%, 50%)"} boxShadow={"hsl(6, 70%, 34%)"} color={"#FFF"} fontSize={1.25} label="=" onClick={handleEquals} />
+            <Button 
+            bgColor={"var(--key--del-reset-background)"} 
+            boxShadow={"var(--key-del-reset-shadow)"} 
+            color={"var(--text-key-del-reset)"} 
+            fontSize={1.25} 
+            label="RESET" 
+            onClick={handleOnClear} />
+            <Button 
+            bgColor={"var(--key-equals-background)"} 
+            boxShadow={"var(--key-equals-shadow)"} 
+            color={"var(--text-key-equals)"} 
+            fontSize={1.25} 
+            label="=" 
+            onClick={handleEquals} />
           </Row>
         </KeyPad>
       </Content>
