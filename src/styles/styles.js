@@ -11,16 +11,11 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   width: 90%;
+  max-width: 425px;
 `
 
 export const Display = styled.div`
   margin-bottom: 1.5rem;
-`
-
-export const KeyPad = styled.div`
-  padding: 1.5rem;
-  background-color: var(--keypad-background);
-  border-radius: .5rem;
 `
 
 export const Row = styled.div`
@@ -31,6 +26,26 @@ export const Row = styled.div`
   gap: .825rem;
   margin: .825rem 0;
 `
+
+export const KeyPad = styled.div`
+  padding: 1.5rem;
+  background-color: var(--keypad-background);
+  border-radius: .5rem;
+  ${Row}:nth-child(1) {
+    margin: 0;
+  }
+  ${Row}:nth-child(5) {
+    margin: 0;
+  }
+
+  @media screen and (min-width: 424.9px) {
+    ${Row} {
+      gap: 1.25rem;
+      margin: 1.25rem 0;
+    }
+  }
+`
+
 export const Header = styled.div`
   width: 100%;
   display: flex;

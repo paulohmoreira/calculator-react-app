@@ -1,3 +1,5 @@
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+
 # Calculator React APP
 
 Primeiro passos com React - Calculadora com operações básicas de matemática, três estilos de temas disponíveis e com design responsivo
@@ -60,7 +62,7 @@ $ yarn run start
   - [x] Alteração na fonte
   - [x] Ajuste iniciais no layout para tema 1
   - [x] Alterações nos botões que terão cores diferentes do tema
-  - [ ] Alterações no layout para ficar mais próximo do design proposto
+  - [x] Alterações no layout para ficar mais próximo do design proposto
 
 - [ ] Validações
   - [ ] Limitar inclusão do "."
