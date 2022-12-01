@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { 
   Container, 
@@ -31,6 +31,14 @@ const App = () => {
 
   //... manipular o tema atual
   const [theme, setTheme] = useState(1);
+
+  // Buscar tema salvo no localstorage
+  useEffect(() => {
+    const currentTheme = JSON.parse(localStorage.getItem("prefers-color-scheme"));
+    if (currentTheme) {
+      setTheme(currentTheme);
+    }
+  }, []);
 
   //... manipular o switcher de tema
   const [switcher, setSwitcher] = useState("8%");
