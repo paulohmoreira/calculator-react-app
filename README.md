@@ -62,8 +62,14 @@ $ yarn run start
   - [x] Alterações nos botões que terão cores diferentes do tema
   - [ ] Alterações no layout para ficar mais próximo do design proposto
 
+- [ ] Validações
+  - [ ] Limitar inclusão do "."
+  - [ ] Limitar inclusão dos operadores
+  - [ ] Corrigir uso do "0" nas operações
+
 - [ ] Funcionalidades extras
   - [x] Adicionar header
+  - [x] Separar cores dos temas
   - [ ] Adicionar temas
   - [ ] Salvar escolha do tema no localstorage
   - [ ] Carregar tema escolhido ao inicar a aplicação

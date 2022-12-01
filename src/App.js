@@ -1,6 +1,17 @@
 import { useState } from "react";
 
-import { Container, Content, Display, KeyPad, Row, Header, WrapperSwitch, Switch, SwitcherContainer, Switcher } from "./styles";
+import { 
+  Container, 
+  Content, 
+  Display, 
+  KeyPad, 
+  Row, 
+  Header, 
+  WrapperSwitch, 
+  Switch, 
+  SwitcherContainer, 
+  Switcher 
+} from "./styles";
 
 import Input from "./components/Input"
 import Button from "./components/Button"
