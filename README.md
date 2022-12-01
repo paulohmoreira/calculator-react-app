@@ -67,13 +67,13 @@ $ yarn run start
   - [ ] Limitar inclusão dos operadores
   - [ ] Corrigir uso do "0" nas operações
 
-- [ ] Funcionalidades extras
+- [x] Funcionalidades extras
   - [x] Adicionar header
   - [x] Separar cores dos temas
   - [x] Adicionar temas
   - [x] Salvar escolha do tema no localstorage
   - [x] Carregar tema escolhido ao inicar a aplicação
-  - [ ] Carregar o toggle switch na posição certa ao iniciar
+  - [x] Carregar o toggle switch na posição certa ao iniciar
 
 ## 🛠 Tecnologias
 

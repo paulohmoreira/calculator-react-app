@@ -36,6 +36,13 @@ const App = () => {
   useEffect(() => {
     const currentTheme = JSON.parse(localStorage.getItem("prefers-color-scheme"));
     if (currentTheme) {
+      if (currentTheme === 1) {
+        setSwitcher("8%");
+      } else if (currentTheme === 2) {
+        setSwitcher("38%");
+      } else {
+        setSwitcher("70%");
+      }
       setTheme(currentTheme);
     }
   }, []);
