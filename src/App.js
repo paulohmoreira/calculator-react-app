@@ -133,12 +133,15 @@ const App = () => {
   const handleTheme = () => {
     if (theme === 1){
       setTheme(2);
+      localStorage.setItem("prefers-color-scheme", JSON.stringify(2));
       setSwitcher("38%");
     } else if (theme === 2){
       setTheme(3);
+      localStorage.setItem("prefers-color-scheme", JSON.stringify(3));
       setSwitcher("70%");
     } else {
       setTheme(1);
+      localStorage.setItem("prefers-color-scheme", JSON.stringify(1));
       setSwitcher("8%");
     }
   }

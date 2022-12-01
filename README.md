@@ -71,8 +71,9 @@ $ yarn run start
   - [x] Adicionar header
   - [x] Separar cores dos temas
   - [x] Adicionar temas
-  - [ ] Salvar escolha do tema no localstorage
+  - [x] Salvar escolha do tema no localstorage
   - [ ] Carregar tema escolhido ao inicar a aplicação
+  - [ ] Carregar o toggle switch na posição certa ao iniciar
 
 ## 🛠 Tecnologias
 
