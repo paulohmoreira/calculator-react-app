@@ -52,7 +52,15 @@ const App = () => {
 
   // Adiciona os dígitos no input
   const handleAddNumber = (number) => {
-    setCurrentNumber(prev => `${prev === "0" ? "" : prev}${number}`)    
+    if (currentNumber === "0") {
+      if (number === ".") {
+        setCurrentNumber(currentNumber + number);
+      } else {
+        setCurrentNumber(prev => `${prev === "0" ? "" : prev}${number}`)
+      }
+    } else {
+      setCurrentNumber(prev => `${prev === "0" ? "" : prev}${number}`)
+    }   
   }
 
   // Limpar input

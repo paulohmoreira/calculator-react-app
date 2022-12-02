@@ -65,10 +65,10 @@ $ yarn run start
   - [x] Alterações no layout para ficar mais próximo do design proposto
   - [x] Ajustes no layout para desktop
 
-- [ ] Validações
+- [x] Validações
   - [x] Limitar inclusão do "."
-  - [ ] Limitar inclusão dos operadores
-  - [ ] Corrigir uso do "0" nas operações
+  - [x] Corrigir inclusão do 0
+  - [ ] Corrigir operações com 0 (Exemplo "3x0")
 
 - [x] Funcionalidades extras
   - [x] Adicionar header
