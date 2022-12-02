@@ -11,7 +11,7 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   width: 90%;
-  max-width: 425px;
+  max-width: 540px;
 `
 
 export const Display = styled.div`
@@ -23,8 +23,8 @@ export const Row = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: .825rem;
-  margin: .825rem 0;
+  gap: 1rem;
+  margin: 1rem 0;
 `
 
 export const KeyPad = styled.div`
@@ -42,6 +42,13 @@ export const KeyPad = styled.div`
     ${Row} {
       gap: 1.25rem;
       margin: 1.25rem 0;
+    }
+  }
+  @media screen and (min-width: 539.9px) {
+    padding: 2rem 2.05rem;
+    ${Row} {
+      gap: 1.5rem;
+      margin: 1.5rem 0;
     }
   }
 `
@@ -82,8 +89,8 @@ export const Switch = styled.div`
 
 export const SwitcherContainer = styled.div`
     background-color: var(--toggle-background);
-    width: 100%;
-    min-height: 22px;
+    width: 72px;
+      min-height: 26px;
     border-radius: 2rem;
     position: relative;
     z-index: 20;
@@ -91,13 +98,13 @@ export const SwitcherContainer = styled.div`
 `
 
 export const Switcher = styled.div`
-    width: 13px;
-    height: 13px;
+    width: 17px;
+      height: 17px;
     min-height: 13px;
     background-color: var(--toggle);
     border-radius: 50%;
     position: absolute;
     left: ${(props) => props.theme};
-    top: 20%;
+    top: 19%;
     transition: all 0.1s linear;
 `

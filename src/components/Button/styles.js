@@ -7,9 +7,9 @@ export const ButtonContainer = styled.button`
   border: none;
   border-radius: .5rem;
   background-color: ${props => props.bgColor ? props.bgColor : "var(--key-background)"};
-  box-shadow:  ${props => props.boxShadow ? `0 3px ${props.boxShadow}` : "0 3px var(--key-shadow)"};
+  box-shadow:  ${props => props.boxShadow ? `0 4px ${props.boxShadow}` : "0 4px var(--key-shadow)"};
   color: ${props => props.color ? props.color : "var(--text-main-keys)"};
-  font-size: ${props => props.fontSize ? `${props.fontSize}rem` : "2rem"};
+  font-size: ${props => props.fontSize ? "1.25rem" : "2rem"};
   font-family: 'League Spartan', sans-serif;
   font-weight: 700;
   cursor: pointer;
@@ -17,6 +17,13 @@ export const ButtonContainer = styled.button`
   line-height: 1.5;
 
   &:hover {
-    opacity: .6;
+    filter: brightness(1.5);
+  }
+
+  @media screen and (min-width: 539.9px) {
+    padding: 0;
+    padding-top: .5rem;
+    font-size: ${props => props.fontSize ? "1.75rem" : "2.5rem"};
+    line-height: ${props => props.fontSize ? "1" : "1"};
   }
 `

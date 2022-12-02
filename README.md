@@ -57,12 +57,13 @@ $ yarn run start
 
 ### Segunda fase do projeto
 
-- [ ] Layout
+- [x] Layout
   - [x] Alterações nos botões
   - [x] Alteração na fonte
   - [x] Ajuste iniciais no layout para tema 1
   - [x] Alterações nos botões que terão cores diferentes do tema
   - [x] Alterações no layout para ficar mais próximo do design proposto
+  - [x] Ajustes no layout para desktop
 
 - [ ] Validações
   - [ ] Limitar inclusão do "."

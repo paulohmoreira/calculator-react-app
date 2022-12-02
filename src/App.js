@@ -197,7 +197,7 @@ const App = () => {
             bgColor={"var(--key--del-reset-background)"} 
             boxShadow={"var(--key-del-reset-shadow)"} 
             color={"var(--text-key-del-reset)"} 
-            fontSize={1.25} 
+            fontSize={1.5} 
             label="DEL" 
             onClick={() => currentNumber.length === 1 && currentNumber === "0" ? "" : deleteValue()} />
           </Row>
@@ -226,14 +226,14 @@ const App = () => {
             bgColor={"var(--key--del-reset-background)"} 
             boxShadow={"var(--key-del-reset-shadow)"} 
             color={"var(--text-key-del-reset)"} 
-            fontSize={1.25} 
+            fontSize={1.5} 
             label="RESET" 
             onClick={handleOnClear} />
             <Button 
             bgColor={"var(--key-equals-background)"} 
             boxShadow={"var(--key-equals-shadow)"} 
             color={"var(--text-key-equals)"} 
-            fontSize={1.25} 
+            fontSize={1.5} 
             label="=" 
             onClick={handleEquals} />
           </Row>
