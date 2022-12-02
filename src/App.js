@@ -52,7 +52,7 @@ const App = () => {
 
   // Adiciona os dígitos no input
   const handleAddNumber = (number) => {
-    setCurrentNumber(prev => `${prev === "0" ? "" : prev}${number}`)
+    setCurrentNumber(prev => `${prev === "0" ? "" : prev}${number}`)    
   }
 
   // Limpar input
@@ -141,6 +141,12 @@ const App = () => {
     }
   }
 
+  const handleAddDot = () => {
+    if (!currentNumber.includes(".")) {
+      handleAddNumber(".");
+    }
+  }
+
   const deleteValue = () => {
     setCurrentNumber(currentNumber.substring(0, currentNumber.length -1))
   }
@@ -216,7 +222,7 @@ const App = () => {
           </Row>
           
           <Row>
-            <Button label="." onClick={() => handleAddNumber(".")} />
+            <Button label="." onClick={handleAddDot} />
             <Button label="0" onClick={() => handleAddNumber("0")} />
             <Button label="/" onClick={handleDivideNumbers} />
             <Button label="x" onClick={handleMultiplyNumbers}/>

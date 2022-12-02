@@ -66,7 +66,7 @@ $ yarn run start
   - [x] Ajustes no layout para desktop
 
 - [ ] Validações
-  - [ ] Limitar inclusão do "."
+  - [x] Limitar inclusão do "."
   - [ ] Limitar inclusão dos operadores
   - [ ] Corrigir uso do "0" nas operações
 
