@@ -1,30 +1,32 @@
-![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 
 # Calculator React APP
 
+![calculator-demo](https://media1.giphy.com/media/of6i2babqs6fTt7w7R/giphy.gif?cid=790b761167d976221cd83e3b3a02eb5206d65ba451ee6120&rid=giphy.gif&ct=g)
+
+- [Descrição](#descrição-do-projeto)
+- [Status do Projeto](#status-do-projeto)
+- [Funcionalidades](#⚙️-funcionalidades)
+  - [Primeira fase](#primeira-fase-do-projeto)
+  - [Segunda fase](#segunda-fase-do-projeto)
+- [Como executar o projeto](#🚀-como-executar-o-projeto)
+- [Tecnologias](#🛠-tecnologias)
+
+<br>
+
+## Descrição do Projeto
+
 Primeiro passos com React - Calculadora com operações básicas de matemática, três estilos de temas disponíveis e com design responsivo
 
-## 🚀 Como executar o projeto
+<br>
 
-```bash
-# Clone este repositório
-$ https://github.com/paulohmoreira/calculator-react-app.git
+## Status do Projeto
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
-# Acesse a pasta do projeto no seu terminal/cmd
-$ cd calculator-react-app
-
-# Instale as dependências
-$ npm install
-
-# Execute a aplicação em modo de desenvolvimento
-$ npm run start
-
-# Ou se você usa o yarn
-$ yarn run start
-
-# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
-```
-
+<br>
 
 ## ⚙️ Funcionalidades
 
@@ -78,8 +80,41 @@ $ yarn run start
   - [x] Carregar tema escolhido ao inicar a aplicação
   - [x] Carregar o toggle switch na posição certa ao iniciar
 
+<br>
+
+## 🚀 Como executar o projeto
+
+```bash
+# Clone este repositório
+$ https://github.com/paulohmoreira/calculator-react-app.git
+
+# Acesse a pasta do projeto no seu terminal/cmd
+$ cd calculator-react-app
+
+# Instale as dependências
+$ npm install
+
+# Execute a aplicação em modo de desenvolvimento
+$ npm run start
+
+# Ou se você usa o yarn
+$ yarn run start
+
+# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
+```
+<br>
+
 ## 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
--   **[styled-components](https://styled-components.com/)**
+- **[Reactjs](https://pt-br.reactjs.org/)** 
+- **[styled-components](https://styled-components.com/)**
+- **[Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)** 
+- **[HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)** 
+
+<br>
+
+## Licença
+
+[MIT licensed](./LICENSE)
