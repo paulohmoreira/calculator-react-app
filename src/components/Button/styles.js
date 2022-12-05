@@ -26,4 +26,9 @@ export const ButtonContainer = styled.button`
     font-size: ${props => props.fontSize ? "1.75rem" : "2.5rem"};
     line-height: ${props => props.fontSize ? "1" : "1"};
   }
+  @media screen and (max-height: 700px) {
+    height: 50px;
+    font-size: ${props => props.fontSize ? "1.25rem" : "2.0rem"};
+    line-height: ${props => props.fontSize ? "1" : "1"};
+  }
 `

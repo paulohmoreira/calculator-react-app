@@ -14,6 +14,9 @@ export const InputContainer = styled.div`
     height: 115px;
     margin-bottom: 24px;
   }
+  @media screen and (max-height: 700px) {
+    height: 85px;
+  }
 
   input {
     width: 100%;
@@ -30,7 +33,11 @@ export const InputContainer = styled.div`
 
     @media screen and (min-width: 539.9px) {
       height: 115px;
-      font-size: 3.5rem;
+      font-size: 3rem;
     }
+    @media screen and (max-height: 700px) {
+      height: 95px;
+    }
+    
   }
 `

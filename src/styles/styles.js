@@ -12,6 +12,10 @@ export const Container = styled.div`
 export const Content = styled.div`
   width: 90%;
   max-width: 540px;
+  @media screen and (max-height: 700px) {
+    max-width: 450px;
+  }
+
 `
 
 export const Display = styled.div`
@@ -51,6 +55,13 @@ export const KeyPad = styled.div`
       margin: 1.5rem 0;
     }
   }
+  @media screen and (max-height: 700px) {
+    padding: 1.25rem;
+    ${Row} {
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+  }
 `
 
 export const Header = styled.div`
@@ -61,6 +72,11 @@ export const Header = styled.div`
   color: var(--text-input);
   font-size: 1.125rem;
   font-family: 'League Spartan', sans-serif;
+
+  @media screen and (max-height: 700px) {
+    font-size: 1rem;
+    margin-bottom: -1rem;
+  }
 `
 
 export const WrapperSwitch = styled.div`
